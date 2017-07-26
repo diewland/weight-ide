@@ -15,22 +15,20 @@
       <!-- Hero header: will stick at the top -->
       <div class="hero-head">
         <header class="nav">
-          <div class="container">
-            <div class="nav-left">
-              <a class="nav-item is-active">
-                Weight IDE
-              </a>
-            </div>
-            <span class="nav-toggle">
-              <span></span>
-              <span></span>
-              <span></span>
-            </span>
-            <div class="nav-right nav-menu">
-              <a id='save' class="nav-item">
-                Save
-              </a>
-            </div>
+          <div class="nav-left">
+            <a class="nav-item is-active">
+              Weight IDE
+            </a>
+          </div>
+          <span class="nav-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+          <div class="nav-right nav-menu">
+            <a class="save nav-item">
+              Save
+            </a>
           </div>
         </header>
       </div>
@@ -38,14 +36,33 @@
       <!-- Hero content: will be in the middle -->
       <div class="hero-body">
         <div class="container has-text-centered">
-          <h1 id='word' class="title">
-            ↙️ Open file from bottom-left
+          <h1 class="title word">
+            Welcome to Weight IDE
           </h1>
+          <div class='panel'>
+            <input type='file' class='upload'>
+            <br>
+            <br>
+            <ul>
+              <li>Positive - Up Arrow</li>
+              <li>Negative - Down Arrow</li>
+              <li>Netural - Spacebar</li>
+              <li>Ignore - Esc</li>
+            </ul>
+          </div>
         </div>
       </div>
 
-      <!-- upload file -->
-      <input type='file' id='upload'>
+      <!-- Hero footer: will stick at the bottom -->
+      <div class="hero-foot">
+        <div class='file-info pull-left'>
+          Filename: N/A
+        </div>
+        <div class='stat pull-right has-text-right'>
+          Line 0/0 | 0.00%
+        </div>
+      </div>
+    </section>
 
     <!-- bottom scripts -->
     <script src='js/FileSaver.min.js'></script>
