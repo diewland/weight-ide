@@ -115,7 +115,12 @@ nav_save.addEventListener('click', function(e){
   var out = [];
   ITEMS.forEach(function(v, i){
     var feedback = WEIGHTS[i];
-    out.push(feedback + "," + v);
+    if(feedback){
+      out.push(feedback + "," + v);
+    }
+    else {
+      out.push(v);
+    }
   });
   var blob = new Blob([out.join('\n')], {type: "text/plain;charset=utf-8"});
   saveAs(blob, 'out_'+ get_dt() +'.txt');
